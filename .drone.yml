@@ -1,6 +1,6 @@
 pipeline:
   publish:
-    image: python:3.4-alpine
+    image: plugins/docker
     repo: foo/bar
     tags: latest
 branches: master
