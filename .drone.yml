@@ -4,4 +4,4 @@ pipeline:
     commands:
       - go build
       - go test
-  branches: master
+branches: master
