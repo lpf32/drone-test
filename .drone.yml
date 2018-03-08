@@ -1,10 +1,6 @@
 pipeline:
-  build:
-    image: python:3.4-alpine
-    commands:
-      - pip install -r requirements.txt
-      - python app.py
-services:
-  redis:
-    image: "redis:alpine"
+  docker:
+    image: golang
+    repo: foo/bar
+    tags: latest
 branches: master
