@@ -1,7 +1,7 @@
 pipeline:
   docker:
     image: plugins/docker
-    repo: foo/bar
+    repo: panpanzhang/drone-test
     tags: latest
     dockerfile: Dockerfile
 
