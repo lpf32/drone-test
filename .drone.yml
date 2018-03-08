@@ -1,6 +1,6 @@
 pipeline:
   docker:
-    image: golang
+    image: python:3.4-alpine
     repo: foo/bar
     tags: latest
 branches: master
