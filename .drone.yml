@@ -1,6 +1,7 @@
 pipeline:
-  publish:
+  docker:
     image: plugins/docker
-    repo: foo/bar
+    repo: kuainiujinke/foo/bar
     tags: latest
+    dockerfile: Dockerfile
 branches: master
