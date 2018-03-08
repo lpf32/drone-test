@@ -1,7 +1,10 @@
 pipeline:
   build:
-    image: golang
+    image: python:3.4-alpine
     commands:
-      - go build
-      - go test
+      - pip install -r requirements.txt
+      - python app.py
+services:
+  redis:
+    image: "redis:alpine"
 branches: master
