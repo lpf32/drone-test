@@ -1,7 +1,7 @@
 pipeline:
   docker:
     image: plugins/docker
-    repo: panpanzhang/drone-test
+    repo: registry-testing.kuainiujinke.com/drone-test
     tags: latest
     dockerfile: Dockerfile
 
