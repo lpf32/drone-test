@@ -11,6 +11,6 @@ pipeline:
     webhook: http://119.28.25.121:3000
     channel: dev
     template: >
-      status={{ build.status }}|branch={{ build.branch}}|tag={{ build.tag }}
+      {"status": {{ build.status }}, "branch": {{ build.branch}}, "tag": {{ build.tag }}}
     when:
       status: [ success, failure ]
