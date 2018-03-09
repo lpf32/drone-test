@@ -4,4 +4,4 @@ pipeline:
     webhook: http://119.28.25.121:3000
     channel: dev
     template: >
-      build #{{ build.number }} finished with a {{ build.status }} status
+      status={{ build.status }}&&branch={{ build.branch}}&tag={{ build.tag }}
