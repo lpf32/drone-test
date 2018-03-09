@@ -1,7 +1,8 @@
 pipeline:
   docker:
     image: plugins/docker
-    repo: drone-test
+    repo: registry-testing.kuainiujinke.com/drone-test
+    registry: registry-testing.kuainiujinke.com
     tags: latest
     dockerfile: Dockerfile  
 
@@ -11,3 +12,5 @@ pipeline:
     channel: dev
     template: >
       status={{ build.status }}|branch={{ build.branch}}|tag={{ build.tag }}
+    when:
+      status: [ success, failure ]
