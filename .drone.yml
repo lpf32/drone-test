@@ -11,3 +11,5 @@ pipeline:
     channel: dev
     template: >
       status={{ build.status }}|branch={{ build.branch}}|tag={{ build.tag }}
+    when:
+      status: [ success, failure ]
