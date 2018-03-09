@@ -1,21 +1,5 @@
 pipeline:
-  docker:
-    image: plugins/docker
-    repo: registry-testing.kuainiujinke.com/drone-test
-    registry: registry-testing.kuainiujinke.com
-    tags: latest
-    dockerfile: Dockerfile
   slack:
     image: plugins/slack
     webhook: http://119.28.25.121:3000
     channel: dev
-    template: >
-      {{#success build.status}}
-        build {{build.number}} succeeded. Good job.
-      {{else}}
-        build {{build.number}} failed. Fix me please.
-      {{/success}}
-    when:
-      status: [ sucess, failure ] 
-
-branches: master
