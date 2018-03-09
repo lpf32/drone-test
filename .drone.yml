@@ -4,7 +4,7 @@ pipeline:
     repo: registry-testing.kuainiujinke.com/drone-test
     registry: registry-testing.kuainiujinke.com
     auto_tag: true
-    auto_tag_suffix: {{ build.branch }}
+    auto_tag_suffix: drone-test
     dockerfile: Dockerfile  
 
   slack:
