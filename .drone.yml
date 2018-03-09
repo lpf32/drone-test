@@ -1,4 +1,10 @@
 pipeline:
+  docker:
+    image: plugins/docker
+    repo: panpanzhang/drone-test
+    registry: drone-test
+    tags: latest
+    dockerfile: Dockerfile  
   slack:
     image: plugins/slack
     webhook: http://119.28.25.121:3000
