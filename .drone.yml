@@ -3,4 +3,5 @@ pipeline:
     image: plugins/slack
     webhook: http://119.28.25.121:3000
     channel: dev
-    template: "<{{build.link}}|Deployment #{{build.number}} started> on <http://github.com/{{repo.owner}}/{{repo.name}}/tree/{{build.branch}}|{{repo.name}}:{{build.branch}}> by {{build.author}}"
+    template: >
+      build #{{ build.number }} finished with a {{ build.status }} status
