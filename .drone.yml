@@ -1,5 +1,6 @@
 pipeline:
-  image: plugins/docker
+  docker:
+    image: plugins/docker
     repo: registry-testing.kuainiujinke.com/drone-test
     registry: drone-test
     tags: latest
